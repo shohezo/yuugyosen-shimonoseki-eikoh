@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* フォントサイズ */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+/* color変数 */
+/* フォント変数 */
+@media screen and (max-width: 790px) {
+  body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  /*コンポーネント */
+  .el_telBtn {
+    font-size: 2rem;
+    width: 234px;
+  }
+  /* ヘッダー */
+  header {
+    position: initial;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: none;
+  }
+  header .el_location {
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    margin: 0;
+    letter-spacing: 0.8em;
+    margin-left: 10px;
+  }
+  /* ドロワーメニュー */
+  .bl_drawer {
+    padding-top: 65px;
+    max-width: 320px;
+  }
+  .bl_drawerBtn {
+    left: -247px;
+    border: none;
+  }
+  .bl_drawer_item {
+    margin-bottom: 30px;
+  }
+  /* ページトップボタン */
+  .el_pageTop .fa-angle-double-up {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
+  /* スクロールダウン */
+  .scrolldown2::before {
+    text-shadow: 0px 0px 5px #ffffff;
+  }
+  .scrolldown2::after {
+    -webkit-box-shadow: 0px 0px 5px #ffffff;
+            box-shadow: 0px 0px 5px #ffffff;
+  }
+  /* ファーストビュー */
+  .ly_fv .bl_fv_logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
+  .ly_fv .el_fv_img_big {
+    z-index: -1;
+    left: 0;
+  }
+  .ly_fv .el_fv_img_small {
+    right: 0;
+    width: 40vw;
+  }
+  .ly_fv .el_telBtn {
+    margin: 30px auto 0px auto;
+  }
+  .ly_fv .el_wave {
+    width: 60%;
+  }
+  /* セクション共有 */
+  .ly_section {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .bl_section_cont {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .bl_section_cont_lead {
+    text-align: center;
+  }
+  .bl_section_img {
+    display: none;
+  }
+  .ly_wrapper {
+    padding: 0;
+  }
+  .el_splashLr,
+  .el_splashRl {
+    width: 100%;
+  }
+  .el_blueBox {
+    height: 50px;
+  }
+  /* ニュース */
+  .news_list {
+    width: 100%;
+  }
+  .news_list dt {
+    line-height: 3rem;
+    margin-bottom: 20px;
+  }
+  .news_list dd {
+    width: 100%;
+    padding: 10px;
+  }
+  /* 釣果情報 */
+  .bl_section_resultsCard_cont {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .bl_section_resultsCard_img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  /* 当船について */
+  .el_ownerImg {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 790px) and (max-width: 500px) {
+  .el_ownerImg {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .bl_ownerName {
+    top: 45%;
+    border: 3px solid #0d8cd0;
+    padding: 3px 9px;
+  }
+  .bl_ownerName_main {
+    font-size: 2rem;
+  }
+  .bl_ownerName_sub {
+    font-size: 1rem;
+  }
+  .bl_about_style_list {
+    margin-left: 0;
+  }
+  .bl_about_style_item {
+    text-align: center;
+  }
+  #about .bl_section_cont {
+    text-align: center;
+  }
+  /* 料金システム */
+  .bl_system_price {
+    margin-top: 120px;
+  }
+  .bl_system_price div dd {
+    text-align: right;
+  }
+  .bl_system_price div dt,
+  .bl_system_price div dd {
+    width: 150px;
+  }
+  /* よくある質問 */
+  .bl_faq_list dt,
+  .bl_faq_list dd {
+    padding: 10px 20px;
+  }
+  /* ギャラリー */
+  #gallery .bl_section_cont {
+    padding: 50px 0px;
+  }
+  .slick-slide img {
+    height: 65vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  /* 問い合わせ */
+  #contact .el_telBtn {
+    margin: 0 auto;
+  }
+  #contact .bl_section_cont_txt dt {
+    text-align: left;
+  }
+  #contact .bl_section_cont_txt dd {
+    text-align: right;
+  }
+  /* フッター */
+  small {
+    font-size: 1rem;
+  }
+  /* ヘルパークラス */
+  .hp_flex {
+    display: block;
+  }
+  .hp_sponlyBr {
+    display: block;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

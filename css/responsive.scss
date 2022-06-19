@@ -1,0 +1,244 @@
+/* フォントサイズ */
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+h5 {
+  font-size: 1rem;
+}
+
+/* color変数 */
+$baseBlue: #0d8cd0;
+$baseWhite: #ffffff;
+$baseBlack: #000000;
+$baseGray: #dddddd;
+$accent: #e7c21b;
+
+/* フォント変数 */
+$headding: rocknroll-one, sans-serif;
+$gallerynumber: alhambra, sans-serif;
+
+@media screen and(max-width:959px) {
+}
+
+@media screen and(max-width:790px) {
+  body {
+    box-sizing: border-box;
+  }
+
+  /*コンポーネント */
+  .el_telBtn {
+    font-size: 2rem;
+    width: 234px;
+  }
+
+  /* ヘッダー */
+  header {
+    position: initial;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    .el_location {
+      writing-mode: unset;
+      margin: 0;
+      letter-spacing: 0.8em;
+      margin-left: 10px;
+    }
+  }
+  /* ドロワーメニュー */
+  .bl_drawer {
+    padding-top: 65px;
+    max-width: 320px;
+    &Btn {
+      left: -247px;
+      border: none;
+    }
+    &_item {
+      margin-bottom: 30px;
+    }
+  }
+
+  /* ページトップボタン */
+  .el_pageTop .fa-angle-double-up {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
+  /* スクロールダウン */
+  .scrolldown2 {
+    &::before {
+      text-shadow: 0px 0px 5px $baseWhite;
+    }
+    &::after {
+      box-shadow: 0px 0px 5px $baseWhite;
+    }
+  }
+
+  /* ファーストビュー */
+  .ly_fv {
+    .bl_fv_logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+    }
+    .el_fv_img_big {
+      z-index: -1;
+      left: 0;
+    }
+    .el_fv_img_small {
+      right: 0;
+      width: 40vw;
+    }
+    .el_telBtn {
+      margin: 30px auto 0px auto;
+    }
+    .el_wave {
+      width: 60%;
+    }
+  }
+
+  /* セクション共有 */
+  .ly_section {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .bl_section_cont {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .bl_section_cont_lead {
+    text-align: center;
+  }
+  .bl_section_img {
+    display: none;
+  }
+  .ly_wrapper {
+    padding: 0;
+  }
+  .el_splashLr,
+  .el_splashRl {
+    width: 100%;
+  }
+  .el_blueBox {
+    height: 50px;
+  }
+  /* ニュース */
+  .news_list {
+    width: 100%;
+    dt {
+      line-height: 3rem;
+      margin-bottom: 20px;
+    }
+    dd {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  /* 釣果情報 */
+  .bl_section_resultsCard {
+    &_cont {
+      width: 90%;
+      margin: 0 auto;
+    }
+    &_img {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+  /* 当船について */
+  .el_ownerImg {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    @media screen and( max-width: 500px) {
+      width: 60%;
+    }
+  }
+  .bl_ownerName {
+    top: 45%;
+    border: 3px solid $baseBlue;
+    padding: 3px 9px;
+    &_main {
+      font-size: 2rem;
+    }
+    &_sub {
+      font-size: 1rem;
+    }
+  }
+  .bl_about_style {
+    &_list {
+      margin-left: 0;
+    }
+    &_item {
+      text-align: center;
+    }
+  }
+  #about .bl_section_cont {
+    text-align: center;
+  }
+  /* 料金システム */
+  .bl_system_price {
+    margin-top: 120px;
+    div {
+      dd {
+        text-align: right;
+      }
+      dt,
+      dd {
+        width: 150px;
+      }
+    }
+  }
+  /* よくある質問 */
+  .bl_faq_list {
+    dt,
+    dd {
+      padding: 10px 20px;
+    }
+  }
+  /* ギャラリー */
+  #gallery .bl_section_cont {
+    padding: 50px 0px;
+  }
+  .slick-slide img{
+    height: 65vw;
+    object-fit: cover;
+  }
+  /* 問い合わせ */
+  #contact .el_telBtn {
+    margin: 0 auto;
+  }
+  #contact .bl_section_cont_txt {
+    dt {
+      text-align: left;
+    }
+    dd {
+      text-align: right;
+    }
+  }
+  /* フッター */
+  small {
+    font-size: 1rem;
+  }
+  /* ヘルパークラス */
+  .hp_flex {
+    display: block;
+  }
+  .hp_sponlyBr {
+    display: block;
+  }
+}

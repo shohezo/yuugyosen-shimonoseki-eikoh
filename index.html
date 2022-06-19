@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>遊漁船 - 英光</title>
+    <meta
+      name="description"
+      content="山口県下関市の遊漁船です。豊かな自然の中で快適なフィッシングライフを提供します。"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon (1).ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <script
+      src="https://kit.fontawesome.com/30c76fcb1e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Adobe fonts -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "zit4lle",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!-- aosライブラリの読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header>
+      <p class="el_location"><i class="fas fa-map-pin"></i>山口県・下関市</p>
+    </header>
+    <div class="bl_drawer">
+      <ul class="bl_drawer_list">
+        <!-- 開いたときの中身 -->
+        <li class="bl_drawer_item"><a href="#news">お知らせ</a></li>
+        <li class="bl_drawer_item"><a href="#results">釣果情報</a></li>
+        <li class="bl_drawer_item"><a href="#about">当船について</a></li>
+        <li class="bl_drawer_item"><a href="#system">料金システム</a></li>
+        <li class="bl_drawer_item"><a href="#question">よくある質問</a></li>
+        <li class="bl_drawer_item"><a href="#gallery">ギャラリー</a></li>
+        <li class="bl_drawer_item"><a href="#contact">お問い合わせ</a></li>
+      </ul>
+      <div class="bl_drawerBtn">
+        <!-- ハンバーガーボタン -->
+        <span class="hambarg"></span>
+        <span class="hambarg"></span>
+        <span class="hambarg"></span>
+      </div>
+      <!--bl_drawerBtn-->
+    </div>
+    <!--bl_drawer-->
+
+    <!-- ページトップボタン -->
+    <a class="el_pageTop" href="#"><i class="fas fa-angle-double-up"></i></a>
+
+    <!-- スクロールダウン -->
+    <div class="scrolldown2"><span></span></div>
+
+    <!-- ファーストビュー -->
+    <div class="ly_fv">
+      <a class="el_telBtn" href="tel:090-1016-3447">
+        <i class="fas fa-phone"></i>090-1016-3447
+      </a>
+      <div class="bl_fv_logo">
+        <p class="bl_fv_logo_sub">遊<span>魚</span>船</p>
+        <h1 class="bl_fv_logo_main">英光</h1>
+      </div>
+      <div class="el_fv_img_big"></div>
+      <div class="el_fv_img_small"></div>
+      <div class="el_blueBox hp_left"></div>
+      <div class="el_wave"></div>
+    </div>
+
+    <!-- ニュース -->
+    <section id="news" class="ly_section hp_100vh">
+      <div class="ly_inner">
+        <div class="ly_wrapper hp_flex">
+          <div class="bl_section_cont">
+            <i class="fas fa-bullhorn"></i>
+            <h2 class="bl_section_cont_ttl">お知らせ</h2>
+            <dl class="news_list">
+              <dt>2021.9.10<br class="hp_sponlyBr"> 新型ウイルス感染症対策について</dt>
+              <dd>
+                乗船前に検温・消毒にご協力ください。またお客様にはマスクの常用をお願いしております。
+              </dd>
+              <dt>2021.9.6<br class="hp_sponlyBr"> ホームページを開設しました</dt>
+              <dd>
+                公式サイトとしてホームページを開設しました。随時情報を更新してまいりますのでよろしくお願い致します。
+              </dd>
+            </dl>
+          </div>
+          <div class="bl_section_img">
+            <img src="./img/背景1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="el_blueBox hp_right"></div>
+        <div class="el_splashLr"></div>
+      </div>
+    </section>
+    <!-- 釣果情報 -->
+    <section id="results" class="ly_section">
+      <div class="ly_inner">
+        <div class="ly_wrapper">
+          <div class="bl_section_cont">
+            <i class="fas fa-fish"></i>
+            <h2 class="bl_section_cont_ttl">釣果情報</h2>
+            <!-- 毎回ここから更新 -->
+            <div class="bl_section_resultsCard hp_flex">
+              <div class="bl_section_resultsCard_cont">
+                <h3 class="bl_section_resultsCard_cont_date">2021/9/24</h3>
+                <div class="bl_section_resultsCard_cont_detail">
+                  下関市在住 Sさん<br>
+                  蓋井沖島の落とし込み釣り。<br>
+                  イワシの付き良好の中、<br>
+                  ヒラマサ〜メジの爆釣でした！<br>
+                </div>
+              </div>
+              <div class="bl_section_resultsCard_img">
+                <img src="./img/2021.9.24釣果.png" alt="">
+              </div>
+            </div>
+            <div class="bl_section_resultsCard hp_flex">
+              <div class="bl_section_resultsCard_cont">
+                <h3 class="bl_section_resultsCard_cont_date">2021/9/11</h3>
+                <div class="bl_section_resultsCard_cont_detail">
+                  下関市在住 Iさん<br>
+                  落とし込みでヒラマサ 9kg,8kgヒット！<br>
+                  その他4kg前後とヒラメの大漁でした。<br>
+                  さすが名人！<br>
+                </div>
+              </div>
+              <div class="bl_section_resultsCard_img">
+                <img src="./img/岩本さん.png" alt="">
+              </div>
+            </div>
+            <!-- 更新ここまで -->
+          </div> 
+        </div>
+        <div class="el_blueBox hp_left"></div>
+        <div class="el_splashRl"></div>
+    </section>
+    <!-- 当船について -->
+    <section id="about" class="ly_section">
+      <div class="ly_inner">
+        <div class="ly_wrapper hp_flex hp_reverse">
+          <div class="bl_section_cont">
+            <i class="fas fa-ship"></i>
+            <h2 class="bl_section_cont_ttl">当船について</h2>
+            <h3 class="bl_section_cont_lead">
+              - 安全で快適な<br>フィッシングタイムを -
+            </h3>
+            <img src="./img/オーナー.png"  alt="" class="el_ownerImg" >
+            <div class="bl_ownerName" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+              <p>船長</p>
+              <h2 class="bl_ownerName_main">
+                大木 <span>英</span>史
+              </h2>
+              <p class="bl_ownerName_sub">
+                Ooki Hidehumi
+              </p>
+            </div>
+            <p class="bl_section_cont_txt">
+              下関の豊かな海を安全・快適に<br>
+              心置きなく楽しんで頂けるよう<br>
+              培った経験と知識で精一杯<br>
+              ご案内させていただきます。<br>
+              <br>
+              下関壇ノ浦漁業組合所属<br>
+              山口県 釣 2023<br>
+            </p>
+            <div class="bl_about_style">
+              <h3 class="bl_about_style_ttl">フィッシングスタイル</h3>
+              <ul class="bl_about_style_list">
+                <li class="bl_about_style_item">
+                  落とし込み
+                </li>
+                <li class="bl_about_style_item">
+                  アジの泳がせ釣り
+                </li>
+                <li class="bl_about_style_item">
+                  ジギング
+                </li>
+                <li class="bl_about_style_item">
+                  タイラバ
+                </li>
+                <li class="bl_about_style_item">
+                  コマセのイサキ釣り
+                </li>
+                <li class="bl_about_style_item">
+                  関門海峡アラカブ釣り
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bl_section_img hp_imgLeft">
+            <img src="./img/オーナー.png" alt="" />
+          </div>
+        </div>
+        <div class="el_blueBox hp_right"></div>
+        <div class="el_splashRl"></div>
+      </div>
+    </section>
+    <!-- システム -->
+    <section id="system" class="ly_section hp_100vh">
+      <div class="ly_inner">
+        <div class="ly_wrapper hp_flex">
+          <div class="bl_section_cont">
+            <i class="fas fa-coins"></i>
+            <h2 class="bl_section_cont_ttl">システム</h2>
+            <div class="bl_system_place">
+              <h3 class="bl_system_place_ttl">釣り場案内</h3>
+              <ul class="bl_system_place_list">
+                <li class="bl_system_place_item">
+                  蓋井島沖〜白島沖
+                </li>
+                <li class="bl_system_place_item">
+                  角島潮巻沖
+                </li>
+                <li class="bl_system_place_item">
+                  関門海峡
+                </li>
+              </ul>
+            </div>
+            <dl class="bl_system_price">
+              <h3 class="bl_system_price_ttl">料金</h3>
+              <div>
+                <dt>蓋井島沖〜白島沖</dt><dd>13,000円〜</dd>
+              </div>
+              <div>
+                <dt>関門海峡</dt><dd>7,000円 </dd>
+              </div>
+              <div>
+                <dt>チャーター</dt><dd>60,000円〜</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="bl_section_img">
+            <img src="./img/背景4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="el_blueBox hp_left"></div>
+        <div class="el_splashLr"></div>
+      </div>
+    </section>
+    <!-- よくある質問 -->
+    <section id="question" class="ly_section">
+      <div class="ly_inner">
+        <div class="ly_wrapper">
+          <div class="bl_section_cont">
+            <i class="fas fa-ship"></i>
+            <h2 class="bl_section_cont_ttl">よくある質問</h2>
+            <!-- <h3 class="bl_section_cont_lead">
+              よくある質問を<br class="hp_sponlyBr">まとめました。
+            </h3> -->
+            <dl class="bl_faq_list">
+              <dt>波が高い日はどうなりますか?</dt>
+              <dd>強風波浪注意号が出ているときは出港しません。</dd>
+              <dt>初心者ですが気をつけることは<br class="hp_sponlyBr">ありますか？</dt>
+              <dd>
+                ライフジャケットは必ず着用してださい。（貸し出し用あり）<br>
+                サンダル、スパイクシューズは乗船不可です。
+              </dd>
+              <dt>何時間ぐらい釣りできますか？</dt>
+              <dd>
+                夏季は5：30出港 〜 14:00沖あがり
+                冬季は6：30出港 〜 14:30沖あがり<br>
+                ※船長の判断により早上がりあり
+              </dd>
+              <dt>道具はレンタルできますか？</dt>
+              <dd>
+                レンタルタックルございます。
+              </dd>
+              <dt>氷はありますか？</dt>
+              <dd>
+                希望によりご用意致します。（有料）
+              </dd>
+            </dl>
+          </div>
+          <div class="bl_section_img hp_imgLeft">
+            <img src="./img/背景6.jpg" alt="" />
+          </div>
+        </div>
+        <div class="el_blueBox hp_right"></div>
+        <div class="el_splashRl"></div>
+      </div>
+    </section>
+    <!-- ギャラリー -->
+    <section id="gallery" class="ly_section">
+      <div class="ly_inner">
+        <div class="ly_wrapper">
+          <div class="bl_section_cont">
+            <i class="fas fa-user-friends"></i>
+            <h2 class="bl_section_cont_ttl">ギャラリー</h2>
+            <p class="bl_section_cont_txt">遊漁船 英光をご利用頂いた皆様の<br class="hp_sponlyBr">生き生きとしたお姿をご覧ください！</p>
+            <div class="container">
+              <div class="slider">
+                <div class="slick-img">
+                  <img src="./img/user1.png" alt=""/>
+                </div>
+                <div class="slick-img">
+                  <img src="./img/user2.png" alt=""/>
+                </div>
+                <div class="slick-img">
+                  <img src="./img/user3.png" alt=""/>
+                </div>
+                <div class="slick-img">
+                  <img src="./img/user4.png" alt=""/>
+                </div>
+                <div class="slick-img">
+                  <img src="./img/user5.png" alt=""/>
+                </div>
+                <div class="slick-img">
+                  <img src="./img/user6.png" alt=""/>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="el_blueBox hp_left"></div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section id="contact" class="ly_section">
+      <div class="ly_inner">
+        <div class="ly_wrapper">
+            <div class="bl_section_cont">
+              <i class="fas fa-phone"></i>
+              <h2 class="bl_section_cont_ttl">お問合わせ</h2>
+              <h3 class="bl_section_cont_lead">
+                完全予約制。<br />事前にお電話ください。
+              </h3>
+              <a class="el_telBtn" href="tel:090-1016-3447">
+                <i class="fas fa-phone"></i>090-1016-3447</a>
+              <dl class="bl_section_cont_txt">
+                <div>
+                  <dt>受付時間</dt><dd>午後8時まで</dd>
+                </div>
+                <div>
+                  <dt>定員</dt><dd>10名</dd>
+                </div>
+                <div>
+                  <dt>設備</span><dd>水洗トイレ完備</dd>
+                </div>
+                <div>
+                  <dt>出船</dt><dd>下関漁港</dd>
+                </div>
+                <p>
+                	※地図の位置の下関漁港からの出船となります。
+                </p>
+              </dl>
+            </div>
+          <div class="bl_section_img">
+            <img src="./img/背景3.jpg" alt="" />
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13239.235085136985!2d130.89275232581332!3d33.94604619075401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543bc327ee30ec9%3A0x571b992f72344d0!2z77yI5pyJ77yJ5b2m5bO25oCl6YWN!5e0!3m2!1sja!2sjp!4v1631849873802!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+          </div>
+        </div>
+        <div class="el_blueBox hp_right"></div>
+        <div class="el_splashRl"></div>
+      </div>
+    </section>
+    <footer>
+      <small>©Fishing boat EIKOH All right reserved.</small>
+      <a href="https://ss-design1104.com/" target="_blank" rel="noopener noreferrer" class="bl_production">
+        <p>produced by</p>
+        <img src="./img/ss-design_logo.png" alt="SS-DESIGNのロゴ">
+      </a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- easing-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <div class="loading">
+      <div class="loading-animation">
+<svg class="sea" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
+   height="100vh" viewBox="0 0 800 350" style="enable-background:new 0 0 800 400;" xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+  .st0{opacity:0.76;}
+  .st1{fill:transparent;}
+  .st2{fill:url(#SVGID_2_);}
+  .st3{fill:url(#SVGID_3_);}
+  .st4{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+]]>
+</style>
+<g id="Sky" class="sky">
+  <radialGradient id="SVGID_1_" cx="400" cy="202.5" r="317.3423" gradientUnits="userSpaceOnUse">
+    <stop  offset="0" style="stop-color:#E6DBFA"/>
+    <stop  offset="3.659654e-002" style="stop-color:#E5DCFA"/>
+    <stop  offset="0.5708" style="stop-color:#D5EBFE"/>
+    <stop  offset="1" style="stop-color:#D0F0FF"/>
+  </radialGradient>
+  <rect y="-1" class="st1" width="800" height="407"/>
+</g>
+<g id="DarkWaves" class="DarkWaves">
+  <g>
+    <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="400.0005" y1="602" x2="400.0005" y2="202.3545">
+      <stop  offset="0" style="stop-color:#20a3ea"/>
+      <stop  offset="0.1789" style="stop-color:#20a3ea"/>
+      <stop  offset="0.4149" style="stop-color:#0043D7"/>
+      <stop  offset="0.6374" style="stop-color:#005CC8"/>
+      <stop  offset="0.8386" style="stop-color:#006CBF"/>
+      <stop  offset="1" style="stop-color:#0071BC"/>
+    </linearGradient>
+    <path class="st2" d="M761.8,202.4c-24.7,0-36.7,7.2-49.5,14.7c-13.2,7.8-26.8,15.9-53.8,15.9c-27,0-40.6-8.1-53.8-15.9
+      c-12.8-7.6-24.9-14.7-49.6-14.7c-24.7,0-36.8,7.2-49.6,14.7c-13.2,7.8-26.8,15.9-53.8,15.9c-27,0-40.7-8.1-53.8-15.9
+      c-12.8-7.6-24.9-14.7-49.6-14.7c-24.7,0-36.8,7.2-49.6,14.7c-13.2,7.8-26.8,15.9-53.8,15.9c-27,0-40.7-8.1-53.8-15.9
+      c-12.8-7.6-24.9-14.7-49.6-14.7c-24.7,0-36.8,7.2-49.6,14.7C78.7,224.9,65,232.9,38,232.9c-27,0-40.4-8.1-53.6-15.9
+      c-12.1-7.1-24.3-13.9-45.4-14.6V602h922V232.9c-22.6-0.8-37.2-8.4-49.7-15.8C798.5,209.5,786.5,202.4,761.8,202.4z"/>
+  </g>
+</g>
+<g id="LightWaves" class="LightWaves">
+  <g>
+    <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="400.0005" y1="600" x2="400.0005" y2="214.3545">
+      <stop  offset="0" style="stop-color:#20a3ea"/>
+      <stop  offset="0.1643" style="stop-color:#20a3ea"/>
+      <stop  offset="0.3574" style="stop-color:#20a3ea"/>
+      <stop  offset="0.5431" style="stop-color:#20a3ea"/>
+      <stop  offset="0.7168" style="stop-color:#20a3ea"/>
+      <stop  offset="0.874" style="stop-color:#28A6E3"/>
+      <stop  offset="1" style="stop-color:#29ABE2"/>
+    </linearGradient>
+    <path class="st3" d="M750.9,229.8c-14.8-7.9-28.7-15.4-57.2-15.4c-28.5,0-42.4,7.5-57.2,15.4c-15.2,8.2-30.9,16.6-62.1,16.6
+      s-46.9-8.4-62.1-16.6c-14.8-7.9-28.7-15.4-57.2-15.4c-28.5,0-42.4,7.5-57.2,15.4c-15.2,8.2-30.9,16.6-62.1,16.6
+      c-31.2,0-46.9-8.4-62.1-16.6c-14.8-7.9-28.7-15.4-57.2-15.4c-28.5,0-42.4,7.5-57.2,15.4c-15.2,8.2-30.9,16.6-62.1,16.6
+      c-31.2,0-46.9-8.4-62.1-16.6c-14.8-7.9-28.9-15.4-57.3-15.4c-16.9,0-28.8,2.6-38.8,6.4V600h922V237c-12,5.3-26,9.4-47.8,9.4
+      C782.1,246.4,766.1,237.9,750.9,229.8z"/>
+  </g>
+</g>
+<g id="WhiteWaves" class="WhiteWaves">
+  <g class="st0">
+    <path class="st4" d="M-71,220c94.2,0,94.2,18,188.4,18c94.2,0,94.2-18,188.4-18c94.2,0,94.2,18,188.4,18c94.2,0,94.2-18,188.4-18
+      s94.2,18,188.4,18"/>
+  </g>
+</g>
+</svg>
+      </div>
+    </div>
+  </body>
+</html>
