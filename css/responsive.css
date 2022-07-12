@@ -22,6 +22,19 @@ h5 {
 
 /* color変数 */
 /* フォント変数 */
+@media screen and (max-width: 916px) {
+  .ly_fv {
+    height: 80vh;
+  }
+  .bl_ownerName {
+    top: 48%;
+    left: 10%;
+  }
+  #system {
+    height: 70vh;
+  }
+}
+
 @media screen and (max-width: 790px) {
   body {
     -webkit-box-sizing: border-box;
@@ -45,7 +58,7 @@ h5 {
         -ms-writing-mode: unset;
             writing-mode: unset;
     margin: 0;
-    letter-spacing: 0.8em;
+    letter-spacing: 0.5em;
     margin-left: 10px;
   }
   /* ドロワーメニュー */
@@ -150,7 +163,7 @@ h5 {
   /* 当船について */
   .el_ownerImg {
     display: block;
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
   }
 }
@@ -163,7 +176,8 @@ h5 {
 
 @media screen and (max-width: 790px) {
   .bl_ownerName {
-    top: 45%;
+    top: 50%;
+    left: 50%;
     border: 3px solid #0d8cd0;
     padding: 3px 9px;
   }
@@ -176,15 +190,15 @@ h5 {
   .bl_about_style_list {
     margin-left: 0;
   }
-  .bl_about_style_item {
-    text-align: center;
-  }
   #about .bl_section_cont {
     text-align: center;
   }
   /* 料金システム */
+  #system {
+    height: 80vh;
+  }
   .bl_system_price {
-    margin-top: 120px;
+    margin-top: 70px;
   }
   .bl_system_price div dd {
     text-align: right;
@@ -210,6 +224,11 @@ h5 {
   /* 問い合わせ */
   #contact .el_telBtn {
     margin: 0 auto;
+  }
+  #contact .bl_section_cont_txt {
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
   }
   #contact .bl_section_cont_txt dt {
     text-align: left;

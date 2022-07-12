@@ -26,7 +26,17 @@ $accent: #e7c21b;
 $headding: rocknroll-one, sans-serif;
 $gallerynumber: alhambra, sans-serif;
 
-@media screen and(max-width:959px) {
+@media screen and(max-width:916px) {
+  .ly_fv {
+    height: 80vh;
+  }
+  .bl_ownerName {
+    top: 48%;
+    left: 10%;
+  }
+  #system{
+   height: 70vh;
+  }
 }
 
 @media screen and(max-width:790px) {
@@ -49,7 +59,7 @@ $gallerynumber: alhambra, sans-serif;
     .el_location {
       writing-mode: unset;
       margin: 0;
-      letter-spacing: 0.8em;
+      letter-spacing: 0.5em;
       margin-left: 10px;
     }
   }
@@ -162,14 +172,15 @@ $gallerynumber: alhambra, sans-serif;
   /* 当船について */
   .el_ownerImg {
     display: block;
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
     @media screen and( max-width: 500px) {
       width: 60%;
     }
   }
   .bl_ownerName {
-    top: 45%;
+    top: 50%;
+    left: 50%;
     border: 3px solid $baseBlue;
     padding: 3px 9px;
     &_main {
@@ -183,16 +194,16 @@ $gallerynumber: alhambra, sans-serif;
     &_list {
       margin-left: 0;
     }
-    &_item {
-      text-align: center;
-    }
   }
   #about .bl_section_cont {
     text-align: center;
   }
   /* 料金システム */
+  #system {
+    height: 80vh;
+  }
   .bl_system_price {
-    margin-top: 120px;
+    margin-top: 70px;
     div {
       dd {
         text-align: right;
@@ -214,13 +225,20 @@ $gallerynumber: alhambra, sans-serif;
   #gallery .bl_section_cont {
     padding: 50px 0px;
   }
-  .slick-slide img{
+  .slick-slide img {
     height: 65vw;
     object-fit: cover;
   }
   /* 問い合わせ */
   #contact .el_telBtn {
     margin: 0 auto;
+  }
+  #contact {
+    .bl_section_cont_txt {
+      margin-right: auto;
+      margin-left: auto;
+      display: table;
+    }
   }
   #contact .bl_section_cont_txt {
     dt {

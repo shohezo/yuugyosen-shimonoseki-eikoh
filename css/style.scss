@@ -68,7 +68,7 @@ $gallerynumber: alhambra, sans-serif;
   font-weight: bold;
   width: 340px;
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: left;
   line-height: 3;
   letter-spacing: 0.1rem;
@@ -233,7 +233,6 @@ header {
   position: relative;
   .el_telBtn {
     margin-left: auto;
-    margin-right: 100px;
   }
   .bl_fv_logo {
     position: absolute;
@@ -508,11 +507,12 @@ body.noscroll {
 
 .bl_section {
   &_cont {
-    max-width: 40%;
+    max-width: 50%;
     width: 400px;
     padding: 50px 30px 50px 30px;
     &_lead {
       margin-bottom: 30px;
+      text-align: center;
     }
     i {
       display: block;
@@ -656,6 +656,7 @@ body.noscroll {
 }
 #about .bl_section_cont {
   text-align: right;
+  max-width: 500px;
 }
 .el_ownerImg {
   display: none;
@@ -693,12 +694,15 @@ body.noscroll {
     font-weight: bold;
     margin-bottom: 10px;
   }
-  &_list {
-    text-indent: 1em;
+  &_item {
+    list-style: disc;
   }
 }
 
 //料金システム
+#system {
+  height: 80vh;
+}
 .bl_system_place {
   margin-bottom: 30px;
   &_ttl {
@@ -751,7 +755,7 @@ body.noscroll {
     margin-right: auto;
     margin-left: auto;
     margin-top: 33px;
-    padding: 80px 0px 80px 0px;
+    padding: 10px 0px 80px 0px;
     dt {
       display: block;
       color: #333;
@@ -783,7 +787,7 @@ body.noscroll {
   background-position: right;
   z-index: -99;
   height: auto;
-  .ly_wrapper{
+  .ly_wrapper {
     padding-right: 0;
     padding-left: 0;
   }
@@ -793,7 +797,7 @@ body.noscroll {
   width: 100%;
   max-width: 1000px;
 }
-.bl_section_cont_txt{
+.bl_section_cont_txt {
   text-align: center;
 }
 .container {
@@ -816,8 +820,13 @@ body.noscroll {
 
 /* コンタクト */
 #contact {
+  .el_telBtn{
+    margin-right: 0px;
+    text-align: center;
+  }
   .bl_section_cont_txt {
     margin-top: 20px;
+    max-width: 500px;
     div {
       margin-top: 10px;
       &:first-child {
@@ -886,4 +895,13 @@ footer {
 }
 .hp_100vh {
   height: 100vh;
+}
+
+.hp_tal {
+  text-align: left !important;
+}
+.hp_centering {
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
 }

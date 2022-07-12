@@ -70,7 +70,7 @@ h5 {
   font-weight: bold;
   width: 340px;
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: left;
   line-height: 3;
   letter-spacing: 0.1rem;
@@ -323,7 +323,6 @@ header .el_location {
 
 .ly_fv .el_telBtn {
   margin-left: auto;
-  margin-right: 100px;
 }
 
 .ly_fv .bl_fv_logo {
@@ -640,13 +639,14 @@ body.noscroll {
 
 /* ここから各セクション */
 .bl_section_cont {
-  max-width: 40%;
+  max-width: 50%;
   width: 400px;
   padding: 50px 30px 50px 30px;
 }
 
 .bl_section_cont_lead {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .bl_section_cont i {
@@ -806,6 +806,7 @@ body.noscroll {
 
 #about .bl_section_cont {
   text-align: right;
+  max-width: 500px;
 }
 
 .el_ownerImg {
@@ -853,8 +854,12 @@ body.noscroll {
   margin-bottom: 10px;
 }
 
-.bl_about_style_list {
-  text-indent: 1em;
+.bl_about_style_item {
+  list-style: disc;
+}
+
+#system {
+  height: 80vh;
 }
 
 .bl_system_place {
@@ -907,7 +912,7 @@ body.noscroll {
   margin-right: auto;
   margin-left: auto;
   margin-top: 33px;
-  padding: 80px 0px 80px 0px;
+  padding: 10px 0px 80px 0px;
 }
 
 .bl_faq_list dt {
@@ -984,8 +989,14 @@ body.noscroll {
 }
 
 /* コンタクト */
+#contact .el_telBtn {
+  margin-right: 0px;
+  text-align: center;
+}
+
 #contact .bl_section_cont_txt {
   margin-top: 20px;
+  max-width: 500px;
 }
 
 #contact .bl_section_cont_txt div {
@@ -1080,5 +1091,15 @@ footer {
 
 .hp_100vh {
   height: 100vh;
+}
+
+.hp_tal {
+  text-align: left !important;
+}
+
+.hp_centering {
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
 }
 /*# sourceMappingURL=style.css.map */
